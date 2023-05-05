@@ -1,0 +1,17 @@
+The Peropesis Linux operating system user manual (English version) is stored in this repository. The manual is written using HTML and CSS in a single-page style. Also this user manual is written using the documentation provided with the software, which is distributed in the Peropesis Linux distribution and using other information sources. Source references to the software man pages and other information in the internet are listed in the user manual. The manual is published on the Peropesis website at: https://peropesis.org/user-manual/
+
+The information provided in the user manual is a copyright work. Copyright (C) 2021-2023 Peropesis*. You may copy, distribute and modify it following Creative Commons Attribution-ShareAlike 4.0 International, (CC BY-SA 4.0) license terms.
+
+If you want to get a user manual code so you can send the corrections, you can clone the latest version using git:
+
+git clone https://repo.or.cz/peropesis-user-manual.git
+
+
+*Authors of the Peropesis user manual:
+Gediminas Mockus
+
+
+Enjoy using.
+
+Gediminas Mockus,
+info(at)peropesis.org

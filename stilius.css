@@ -1,0 +1,421 @@
+* {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #2b2d2e;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: underline;
+  color: #0000EE;
+}
+
+a:hover {
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #551A8B;
+}
+
+/*Kalba*/
+.kalba {
+  color: gray;
+  font-size: 90%;
+  background-color: #fff;
+  width: 85%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: right;
+  border: 0px solid #e9e9e9;
+}
+
+.kalba a {
+  display: inline-block;
+  color: #0000EE;
+  text-align: center;
+  text-decoration: none;
+}
+
+.kalba a:hover {
+  color: #0000EE;
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+  .kalba {
+    width: 85%;
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .kalba {
+    width: 1100px;
+  }
+}
+
+/*Logo*/
+.logo {
+  background-color: #fff;
+  width: 85%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: left;
+  border: 0px solid #e9e9e9;
+}
+
+.logo pre {
+  color: #212222;
+  display: block;
+  white-space: pre;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 7px;
+  letter-spacing: -1px;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+  .logo {
+    width: 85%;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 900px) {
+.logo pre {
+  font-size: 9px;
+}
+}
+@media screen and (max-width: 700px) {
+.logo pre {
+  font-size: 10px;
+}
+}
+@media screen and (min-width: 1300px) {
+  .logo {
+    width: 1100px;
+  }
+}
+
+/*Pagrindinis*/
+.pagrindinis {
+  width: 85%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background-color: #fff;
+
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.kaire {
+  background-color: #fff;
+  float: left;
+  width: 30%;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  border: 0px solid #e9e9e9;
+}
+
+/*Meniu*/
+.kaire ul {
+  font-size: 12px;
+  list-style-type: none;
+  margin: 0px 0px 15px 0px;
+  padding: 0px;
+  font-weight: bold;
+  color: #434a5e;
+}
+
+.kaire li a {
+  display: block;
+  padding: 5px 0px;
+  text-decoration: none;
+  color: #0000EE;
+}
+
+.kaire li a:hover {
+  color: #0000EE;
+  text-decoration: underline;
+}
+/*Meniu End*/
+
+hr.meniu {
+  border: 0px solid #e9e9e9;
+  width: 250px;
+  background-color: #e9e9e9;
+  height: 1px;
+  margin: 0px 0px 10px 0px;
+}
+
+.desine {
+  background-color: #fff;
+  float: left;
+  width: 70%;
+  margin: 0px;
+  padding: 0px;
+  border: 0px solid #e9e9e9;
+}
+
+.pavadinimas {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+hr.pavadinimas {
+  border: 1px dotted gray;
+  width: 100%;
+}
+
+.turinys {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.kodas {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  background: #f1f1f1;
+  line-height: 1.2em;
+  letter-spacing: 1px;
+  padding: 10px 5px 10px 5px;
+  width: 100%;
+  border: 1px dashed #0000EE;
+}
+
+kbd {
+  font-weight: bold;
+}
+
+/*Naujienos*/
+.naujienos-antraste {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.naujienos-antraste a {
+  display: inline-block;
+  color: #0000EE;
+  text-decoration: none;
+}
+
+.naujienos-antraste a:hover {
+  color: #0000EE;
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+.naujiena {
+  text-align: justify;
+  margin: 0px 0px 20px 40px;
+}
+
+hr.naujienos-hr {
+  border: 0;
+  border-top: 1px dashed gray;
+  width: 100%;
+  margin-bottom: 20px;
+}
+/*Naujienos End*/
+
+.desine ul {
+  display: block;
+  list-style-type: square;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+
+.desine dl {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.desine dt {
+  display: block;
+  margin: 10px 0px 10px 0px;
+}
+
+.desine dd {
+  display: block;
+  margin: 1px 0px 0px 10px;
+}
+
+.download {
+  display: inline-block;
+  background-color: #f5f5f5;
+  border: 1px solid #e9e9e9;
+  text-align: center;
+}
+
+.download a:link {
+  display: inline-block;
+  color: #0000EE;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.download a:visited {
+  color: #0000EE;      
+}
+
+.download a:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: gray;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+/*Forma*/
+.forma {
+  border-radius: 1px;
+  border: 1px solid #e9e9e9;
+  background-color: #fff;
+  margin: 40px 0px 40px 0px;
+  padding: 20px;
+  color: #2b2d2e;
+}
+
+.forma input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+
+.forma input[type=radio] {
+  padding: 12px 20px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+
+.forma textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+
+.forma input[type=submit] {
+  width: 20%;
+  background-color: gray;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.forma input[type=submit]:hover {
+  background-color: gray;
+  opacity: 0.9;
+}
+/*Forma end*/
+
+/*Klaidos*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+/*Klaidos End*/
+
+.a {
+  display: block;
+  margin-bottom: 20px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+}
+
+.b {
+  display: block;
+  margin-bottom: 20px;
+}
+/*Klaidos end*/
+
+@media screen and (max-width: 700px) {
+  .desine, .kaire {
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .pagrindinis {
+    width: 1100px;
+  }
+}
+
+.apacia {
+  background-color: #fff;
+  width: 85%;
+  border: 0px solid #e9e9e9;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 90%;
+}
+
+hr.apacia {
+  border: 0px solid #e9e9e9;
+  width: 85%;
+  background-color: #e9e9e9;
+  height: 1px;
+}
+
+@media screen and (max-width: 700px) {
+  .apacia {
+    width: 85%;
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .apacia {
+    width: 1100px;
+  }
+  hr.apacia {
+  width: 1100px;
+  }
+}
