@@ -56,7 +56,7 @@
   <div class="desine">
 
   <p><span class="pavadinimas">PEROPESIS LINUX OS USER MANUAL</span></p>
-  <p class="turinys">This webpage contains basic information about how to use the Peropesis Linux operating system. If you have any questions, comments or suggestions about the information contained in this manual, you can write about it in the Peropesis <a href="/forum">forum</a> or by e-mail: info(at)peropesis.org.</p>
+  <p class="turinys">This is Peropesis Linux operating system user manual. This manual contains basic information about how to use the Peropesis Linux operating system. If you have any questions, comments or suggestions about the information contained in this manual, you can write about it in the Peropesis <a href="/forum">forum</a> or by e-mail: info(at)peropesis.org.</p>
 
   <hr class="pavadinimas">
 
@@ -87,7 +87,7 @@
   <dd><a href="#virtual-console">4.3 Virtual console</a></dd>
   <dd><a href="#screen-manager-screen">4.4 Screen manager - screen</a></dd>
 
-  <dt><a href="#basic-applications">5. Applications</a></dt>
+  <dt><a href="#basic-programs">5. Basic programs</a></dt>
   <dd><a href="#program-pwd">5.1 Program pwd</a></dd>
   <dd><a href="#program-cd">5.2 Program cd</a></dd>
   <dd><a href="#program-ls">5.3 Program ls</a></dd>
@@ -112,9 +112,11 @@
   <dd><a href="#terminal-font">9.2 Terminal font</a></dd>
   <dd><a href="#keyboard-map">9.3 Keyboard map</a></dd>
 
-  <dt><a href="#unsorted-documentation">10. Unsorted documentation</a></dt>
-  <dd><a href="#peropesis-live-iso-image">10.1 Peropesis live ISO image</a></dd>
-  <dd><a href="#loading-of-required-firmware">10.2 Loading of required firmware</a></dd>
+  <dt><a href="#installing-new-software">10. Installing new software</a></dt>
+
+  <dt><a href="#unsorted-documentation">11. Unsorted documentation</a></dt>
+  <dd><a href="#peropesis-live-iso-image">11.1 Peropesis live ISO image</a></dd>
+  <dd><a href="#loading-of-required-firmware">11.2 Loading of required firmware</a></dd>
 
   </dl>
 
@@ -540,8 +542,8 @@
 
   <hr class="pavadinimas">
 
-  <p><span id="basic-applications" class="pavadinimas">5. Applications</span></p>
-  <p class="turinys">In the Peropesis Linux file system, common destination programs are located in <i>/bin</i>, <i>/sbin</i>, <i>/usr/bin</i> and <i>/usr/sbin</i> directories. In order to familiarize yourself with these programs and then use them, before that, it is necessary to familiarise yourself with some of the main commands of programmes.</p>
+  <p><span id="basic-programs" class="pavadinimas">5. Basic programs</span></p>
+  <p class="turinys">In the Peropesis Linux file system programs are located in <i>/bin</i>, <i>/sbin</i>, <i>/usr/bin</i> and <i>/usr/sbin</i> directories. In order to get to know these programs and then use them, before that, it is necessary to get to know some of the main commands of programs.</p>
 
   <p class="turinys">Because the Peropesis operating system is minimalist, a command-line-based system, all programs on this system are accessed through a command-line interface. Immediately after the Peropesis OS has been loaded in the computer's RAM and the system has been accessed on behalf of a root user, all programs can be called by specifying their names/commands in the command prompt.</p>
 
@@ -1166,12 +1168,71 @@
 
   <hr class="pavadinimas">
 
-  <p><span id="unsorted-documentation" class="pavadinimas">10. Unsorted documentation</span></p>
+  <p><span id="installing-new-software" class="pavadinimas">10. Installing new software</span></p>
+
+  <p class="turinys">This chapter contains instructions for installing new software on the Peropesis root file system from the source code. These general instructions can be used to install all software that accords <a target="_blank" href="https://www.gnu.org/savannah-checkouts/gnu/automake/manual/automake.html#GNU-Build-System">GNU Build System</a> standards.</p>
+
+  <p class="turinys">Basic instruction. You need:<br>
+  1. To download software that is prepared in source code format.<br>
+  2. To extract downloaded archive using archiver <b>tar</b> and compressors <b>xz</b>, <b>gzip</b>, <b>bzip2</b>, <b>lzip</b> or <b>zstd</b>.<br>
+  3. To enter to the directory, which contains the extracted software source code.<br>
+  4. To call the shell script named <b>./configure</b>. The script will perform the tasks of making the compiled software compatible with your system.<br>
+  5. To compile the software using <b>make</b>, a program that manages the automatic compilation process.<br>
+  6. To install the compiled software to the Peropesis file system using the <b>make install</b> command.
+  </p>
+
+  <p class="turinys">Basic instruction in brief:</p>
+
+  <p class="kodas"><samp>$</samp> <kbd>wget https://.../software.tar.gz</kbd><br>
+  <samp>$</samp> <kbd>tar -xvf software.tar.gz</kbd><br>
+  <samp>$</samp> <kbd>cd software</kbd><br>
+  <samp>$</samp> <kbd>./configure</kbd><br>
+  <samp>$</samp> <kbd>make</kbd><br>
+  <samp>#</samp> <kbd>make install</kbd>
+  </p>
+
+  <p class="turinys">The following is a basic example of installing the <a target="_blank" href="https://curl.se/">curl</a> software. Program <b>curl</b> is used in command lines or scripts to transfer data.</p>
+
+  <p class="turinys">You need to download curl. The latest release of curl can be checked <a target="_blank" href="https://curl.se/download.html">here</a>. You can use the <b>wget</b> program to download the package. Example (you must type the latest version number of the curl instead of the asterisk):</p>
+
+  <p class="kodas"><samp>$</samp> <kbd>wget https://curl.se/download/curl-*.tar.gz</kbd></p>
+
+  <p class="turinys">Once downloaded, archived, and compressed, the software package must be extracted. Example:</p>
+
+  <p class="kodas"><samp>$</samp> <kbd>tar -xvf curl-*.tar.gz</kbd></p>
+
+  <p class="turinys">In the next step, you need to enter to the extracted curl directory. Example:</p>
+
+  <p class="kodas"><samp>$</samp> <kbd>cd curl-*</kbd></p>
+
+  <p class="turinys">In the curl software documentation provided whith source code, the <i>docs/install.md</i> file contains instruction for installing the curl. The first step in the instruction indicates the excuting of the <b>./configure</b> script. Example:</p>
+
+  <p class="kodas"><samp>$</samp> <kbd>./configure --prefix=/usr --libdir=/usr/lib64 --with-openssl</kbd></p>
+
+  <p class="turinys"><b>Note</b>. In the example, the ./configure script is run with options. Option <i>--prefix=/usr</i> represents a future software location in the Peropesis file system, <i>--libdir=/usr/lib64</i> represents a future libraries location in the file system, <i>--with-openssl</i>  specifies to use OpenSSL.</p>
+
+  <p class="turinys">The <b>make</b> program is called to start the compilation process. Example:</p>
+
+  <p class="kodas"><samp>$</samp> <kbd>make</kbd></p>
+
+  <p class="turinys">The <b>make install</b> command is used to install/copy the compiled software to file system. Example:</p>
+
+  <p class="kodas"><samp>#</samp> <kbd>make install</kbd></p>
+
+  <p class="turinys">After the last step, the curl software should be installed in the Peropesis file system. Let's call the program curl. Example:</p>
+
+  <p class="kodas"><samp>$</samp> <kbd>curl --version</kbd></p>
+
+  <p class="turinys">More information about make and its options can be found on the <b>make(1) man</b> page.</p>
+
+  <hr class="pavadinimas">
+
+  <p><span id="unsorted-documentation" class="pavadinimas">11. Unsorted documentation</span></p>
   <p class="turinys">This chapter publishes the documentation that was not thematically close to the topic of any other chapter.</p>
 
   <hr class="pavadinimas">
 
-  <p><span id="peropesis-live-iso-image" class="pavadinimas">10.1 Peropesis live ISO image</span></p>
+  <p><span id="peropesis-live-iso-image" class="pavadinimas">11.1 Peropesis live ISO image</span></p>
   <p class="turinys">This chapter contains a file system (iso9660) plan of Peropesis optical disk image (ISO). Also this chapter provides an example of extracting an ISO image. One possible way to extract an ISO image is to mount the image into a file system. Tools such as <b>mount</b> and <b>loop</b> are used  for image mounting. These tools are distributed in most Linux distributions between them and in the Peropesis Linux distribution. Example of Peropesis ISO image mounting:</p>
 
   <p class="kodas"><samp>#</samp> <kbd>modprobe loop</kbd><br>
@@ -1223,7 +1284,7 @@
 
   <hr class="pavadinimas">
 
-  <p><span id="loading-of-required-firmware" class="pavadinimas">10.2 Loading of required firmware</span></p>
+  <p><span id="loading-of-required-firmware" class="pavadinimas">11.2 Loading of required firmware</span></p>
 
   <p class="turinys">Some hardware in Linux operating systems only works with certain types of commercial software, that does not have open source access and is therefore not included in the Linux kernel software package. This type of commercial software is called firmware and is distributed separately from the Linux kernel.</p>
 
