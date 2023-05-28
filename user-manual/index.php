@@ -1225,6 +1225,15 @@
 
   <p class="turinys">More information about make and its options can be found on the <b>make(1) man</b> page.</p>
 
+  <p class="turinys">Below you can watch video about how to install <b>bc</b> software from source code. More information about bc can be found at <a target="_blank" href="https://git.gavinhoward.com/gavin/bc/">https://git.gavinhoward.com/gavin/bc/</a>.</p>
+
+  <p class="turinys">
+  <video controls>
+  <source src="/media/installing-bc-software-from-source-code.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+  </p>
+
   <hr class="pavadinimas">
 
   <p><span id="unsorted-documentation" class="pavadinimas">11. Unsorted documentation</span></p>
