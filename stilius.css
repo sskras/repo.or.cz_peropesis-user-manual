@@ -192,6 +192,7 @@ hr.pavadinimas {
   display: inline-block;
   margin-bottom: 20px;
   font-size: 14px;
+  font-family: monospace;
   background: #f1f1f1;
   line-height: 1.2em;
   letter-spacing: 1px;
